@@ -6,3 +6,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* React Split gutter styling */
+.gutter {
+    background-color: #444;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+    cursor: col-resize;
+    width: 6px;
+}
+
+.gutter.gutter-vertical {
+    cursor: row-resize;
+    height: 6px;
+}

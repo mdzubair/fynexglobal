@@ -9,6 +9,7 @@ import {
   Monitor,
   MonitorSmartphone,
 } from "lucide-react";
+import Link from "next/link";
 
 const ACCENT = "#28b247";
 
@@ -19,7 +20,7 @@ const platforms = [
     type: "Online Platform",
     image: "https://i.imgur.com/xxw9hGJ.png",
     support: ["Chrome", "Firefox", "Safari"],
-    download: "#",
+    download: "/terminal",
     icon: <Globe size={18} />,
   },
   {
@@ -115,12 +116,13 @@ export default function TradingPlatformPage() {
 
             {/* Download Button */}
             <div className="mt-4 sm:mt-0 flex justify-center sm:justify-end w-full sm:w-[25%]">
-              <a
+              <Link
                 href={p.download}
+                target={p.name === "WEB Terminal" ? "_blank" : undefined}
                 className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500 rounded-lg text-green-400 hover:bg-green-500 hover:text-white transition-all duration-300 text-sm font-medium shadow-sm w-full sm:w-auto justify-center"
               >
                 <Download size={18} /> Download
-              </a>
+              </Link>
             </div>
           </motion.div>
         ))}
