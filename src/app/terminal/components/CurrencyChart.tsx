@@ -79,7 +79,7 @@ export default function CurrencyChart() {
       }
     };
     loadData();
-    const id = setInterval(loadData, 10000);
+    const id = setInterval(loadData, 5000);
     return () => clearInterval(id);
   }, [chartSymbol, activeInterval, activeChart]);
 

@@ -43,7 +43,7 @@ export default function BuySellModal() {
 
     if (open && chartSymbol) {
       getLiveValue();
-      intervalId = setInterval(getLiveValue, 10000);
+      intervalId = setInterval(getLiveValue, 500);
     }
 
     return () => {

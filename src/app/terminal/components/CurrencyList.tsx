@@ -130,7 +130,9 @@ export default function CurrencyList() {
       }
     };
 
-    fetchData();
+    const intervalId = setInterval(fetchData, 500);
+
+    return () => clearInterval(intervalId);
   }, [fetchCurr]);
 
   // Add new currency
