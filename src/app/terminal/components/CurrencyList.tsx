@@ -215,11 +215,12 @@ export default function CurrencyList() {
                   >
                     {item.symbol}
                   </td>
-                  <td className="px-3 py-2 border border-[#2a2b2d]">
-                    {item.bid.toFixed(4)}
-                  </td>
+
                   <td className="px-3 py-2 border border-[#2a2b2d]">
                     {item.ask.toFixed(4)}
+                  </td>
+                  <td className="px-3 py-2 border border-[#2a2b2d]">
+                    {item.bid.toFixed(4)}
                   </td>
                   <td
                     className={`px-3 py-2 border border-[#2a2b2d] ${
