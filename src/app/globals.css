@@ -22,3 +22,64 @@
     cursor: row-resize;
     height: 6px;
 }
+
+
+
+
+
+/* ===== Premium Global Scrollbar (2px, Gold Accent) ===== */
+html,
+body {
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #363636 #0a0b0d;
+    /* thumb and track */
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0b0d;
+    /* dark background to blend with theme */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #363636;
+    /* premium gold tone */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d8c46a;
+    /* slightly lighter on hover */
+}
+/* ===== Custom Scrollbar for Dark Theme ===== */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #363636;
+    /* subtle dark background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #363636;
+    /* your gold accent color */
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #363636;
+    /* lighter on hover */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #363636 #363636;
+}
